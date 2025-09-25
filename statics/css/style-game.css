@@ -1,0 +1,252 @@
+:root {
+
+    --blanco:           #fff;
+    --negro:            #000;
+
+
+    --colorFondo:       #ddd;
+    --colorPrincipal:   #27A3F5;
+    --colorSecundario:  #FFC107;
+}
+
+
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+    
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+    min-height: 100vh; 
+    box-sizing: border-box;
+}
+
+h1 {font-size: 2.8rem;}
+h2 {font-size: 2.8rem;}
+h3 {font-size: 2rem;}
+h1,h2,h3,p {text-align: center; margin: 0;}
+
+
+
+
+.header {
+    text-align: center;
+    width: 100%;
+    padding: .2rem;
+    background-color: var(--blanco);
+}
+.nav__contenedor {
+    background-color: var(--colorPrincipal);
+}
+
+.nav__enlace {
+    display: block;
+    text-align: center;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+.nav__enlace:hover {
+   background-color: yellow;
+   color: var(--negro); 
+}
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .navegacion {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+.activo {
+    text-decoration: underline;
+}
+
+
+
+/*          Principal          */
+
+.juego {
+    background-color: var(--blanco);
+    width: 75%;
+    margin: 2rem auto;
+    border-radius: .5rem;
+
+    padding: 1rem;
+}
+
+.juego h2 {
+    font-family: cursive;
+    font-size: 2.2rem;
+}
+
+.juego h3 {
+    margin-bottom: 8px;
+}
+
+.contenedor_explicacion {
+    height: 60vh;
+    text-align: center;
+}
+
+.contenedor_explicacion a {
+    background-color: blue;
+    color: var(--blanco);
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Times New Roman';
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 40px;
+
+}
+
+.contenedor_explicacion p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 40px auto;
+    max-width: 80%;
+}
+
+
+
+
+
+
+
+
+.pregunta__header {
+    margin: 0;
+    background-color: var(--colorPrincipal);
+    color: var(--blanco);
+    padding: 1rem;
+    font-weight: 800;
+}
+
+
+.main__content {
+    margin: 3rem auto;
+    width: 70%;
+    border-radius: 3rem;
+    height: 43rem;
+    background-color: var(--blanco);
+}
+
+
+
+
+.content__pregunta { 
+    margin: auto;
+    width: 90%;
+    padding: 2rem;
+    height: 10rem;
+}
+.pregunta{
+    margin-top: 1.5rem;
+}
+
+
+
+.respuestas {
+    text-align: center;
+    color: var(--blanco);
+    width: 40%;
+    margin: 3rem auto;
+    font-size: 2rem;
+    display: flex;    
+    flex-direction: column;
+    gap: 1rem;
+}
+.respuesta {
+    padding: .5rem;
+    border-radius: 2rem;
+    background: linear-gradient(to left, #FFC107, gold);
+}
+
+.espaciado5 {margin-top: 5rem;}
+.espaciado3 {margin-top: 3rem;}
+
+
+.botones {
+    font-size: 1.8rem;   
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.botones a {
+    background-color: var(--colorPrincipal);
+    padding: 1.5rem;
+    border-radius: 20px;
+    color: var(--blanco);
+}
+
+
+
+
+.correcta__main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--blanco);
+    width: 75%;
+    margin: 2.5rem auto;
+    border-radius: 3rem;
+    padding: 3rem;
+    box-shadow: #777 10px 0px 50px;
+}
+
+
+.resp_correcta {
+    margin-top: 1rem;
+    font-size: 4rem;
+}
+
+.correct__img{
+    background-image: url(../img/game-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+    border-radius: 20px;
+
+}
+
+.correct__img img {
+    display: none;
+}
+
+.explicacion__correcta {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+
+
+footer {
+    background-color: #333;
+    padding: 3rem 2rem;
+}
+footer h3 {
+    text-align: center;
+    color: #fff;
+}
