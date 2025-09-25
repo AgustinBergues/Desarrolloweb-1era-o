@@ -213,22 +213,3 @@ footer h3 {
     text-align: center;
     color: #fff;
 }
-
-
-.wrap { max-width: 960px; margin: 0 auto; padding: 1rem; }
-.nav a { margin-right: .75rem; }
-.btn { display:inline-block; padding:.6rem .9rem; border-radius:.5rem; text-decoration:none; font-weight:600; }
-.btn-accent { background:#E0B000; color:#121417; }
-.btn-accent:focus, .btn-accent:hover { outline:2px solid currentColor; }
-
-/* Tablas accesibles */
-table { width:100%; border-collapse:collapse; margin:1rem 0; }
-caption { font-weight:700; margin-bottom:.5rem; text-align:left; font-size: 2rem;}
-th, td { border:1px solid #2a2e37; padding:.6rem; text-align:center;font-size: 1.5rem;}
-thead { background:#0F2C4C; color:#fff; }
-
-/* Responsive simple */
-@media (max-width: 640px){
-  th, td { font-size:.95rem; }
-  .nav a { display:inline-block; margin:.25rem .5rem .25rem 0; }
-}
